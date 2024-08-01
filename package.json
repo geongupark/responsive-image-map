@@ -2,7 +2,7 @@
   "name": "responsive-image-map",
   "version": "1.0.0",
   "description": "Responsive map according to image size",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "babel src --out-dir dist",
     "prepublishOnly": "npm run build",
