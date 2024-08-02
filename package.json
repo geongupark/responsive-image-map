@@ -1,6 +1,6 @@
 {
   "name": "responsive-image-map",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Responsive map according to image size",
   "main": "dist/index.js",
   "scripts": {
