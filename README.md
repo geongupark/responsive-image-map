@@ -20,7 +20,7 @@ npm install responsive-image-map
 import { makeResponsiveImageMap } from "responsive-image-map";
 
 document.addEventListener("DOMContentLoaded", function () {
-  makeResponsiveImageMap("class1", "class2"); // Add your class names here
+  ResponsiveImageMap.makeResponsiveImageMap("class1", "class2"); // Add your class names here
 });
 ```
 
