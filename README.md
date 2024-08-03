@@ -9,7 +9,13 @@
 ## Installation
 
 ```bash
+# Node Package Manager
 npm install responsive-image-map
+
+# CDN
+# Opting unpkg or jsdelivr
+<script src="https://unpkg.com/responsive-image-map/dist/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/responsive-image-map"></script>
 ```
 
 ## Usage
