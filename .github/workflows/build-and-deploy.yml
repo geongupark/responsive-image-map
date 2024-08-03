@@ -59,6 +59,12 @@ jobs:
           node-version: "20"
           registry-url: "https://registry.npmjs.org/"
 
+      - name: Configure Git
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+
       - name: Determine version bump
         id: determine_version
         run: |
