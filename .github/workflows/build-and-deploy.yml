@@ -59,6 +59,10 @@ jobs:
           node-version: "14"
           registry-url: "https://registry.npmjs.org/"
 
+      - name: Unstage package-lock.json changes
+        run: |
+          git reset HEAD package-lock.json
+
       - name: Determine version bump
         id: determine_version
         run: |
