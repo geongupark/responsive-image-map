@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="dist/index.js"></script>
+  </head>
+  <body>
+    <img
+      src="https://github.com/user-attachments/assets/6cf473f8-5004-4972-884b-d5436fece34b"
+      usemap="#image-map-1"
+      class="class1"
+      style="width: 100%; height: 100%"
+    />
+    <map name="image-map-1">
+      <area
+        shape="rect"
+        coords="100,100,200,200"
+        href="https://github.com/geongupark/responsive-image-map/issues/new"
+        alt="Example 1"
+      />
+    </map>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        ResponsiveImageMap.makeResponsiveImageMap("class1"); // Add your class names here
+      });
+    </script>
+  </body>
+</html>

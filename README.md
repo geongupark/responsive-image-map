@@ -15,7 +15,7 @@ npm install responsive-image-map
 # CDN
 # Opting unpkg or jsdelivr
 <script src="https://unpkg.com/responsive-image-map/dist/index.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/responsive-image-map"></script>
+<script src="https://cdn.jsdelivr.net/npm/responsive-image-map/dist/index.min.js"></script>
 ```
 
 ## Usage
@@ -27,26 +27,26 @@ npm install responsive-image-map
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    ...
-    <script src="https://cdn.jsdelivr.net/npm/responsive-image-map"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="dist/index.js"></script>
   </head>
   <body>
-    <div>
-      <img
-        src="..."
-        usemap="#image-map-1"
-        class="class1"
-        style="width: 100%; height: 100%"
+    <img
+      src="https://github.com/user-attachments/assets/6cf473f8-5004-4972-884b-d5436fece34b"
+      usemap="#image-map-1"
+      class="class1"
+      style="width: 100%; height: 100%"
+    />
+    <map name="image-map-1">
+      <area
+        shape="rect"
+        coords="100,100,200,200"
+        href="https://github.com/geongupark/responsive-image-map/issues/new"
+        alt="Example 1"
       />
-      <map name="image-map-1">
-        <area
-          shape="rect"
-          coords="100,100,200,200"
-          href="https://github.com/geongupark/responsive-image-map/issues/new"
-          alt="Example 1"
-        />
-      </map>
-    </div>
+    </map>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         ResponsiveImageMap.makeResponsiveImageMap("class1"); // Add your class names here
