@@ -5,8 +5,10 @@
     "moduleResolution": "node",
     "strict": true,
     "esModuleInterop": true,
+    "declaration": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist"
   },
   "include": ["src"]
 }
